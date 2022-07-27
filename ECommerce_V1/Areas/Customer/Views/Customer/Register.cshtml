@@ -1,0 +1,127 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Customer Registration Form</title>
+    <style>
+        h3 {
+            font-family: Calibri;
+            font-size: 25pt;
+            font-style: normal;
+            font-weight: bold;
+            color: SlateBlue;
+            text-align: center;
+            text-decoration: underline
+        }
+
+        table {
+            font-family: Calibri;
+            color: white;
+            font-size: 11pt;
+            font-style: normal;
+            font-weight: bold;
+            text-align:;
+            background-color: SlateBlue;
+            border-collapse: collapse;
+            border: 2px solid navy
+        }
+
+            table.inner {
+                border: 0px
+            }
+    </style>
+</head>
+
+<body>
+    <div style="background-color:aqua">
+        <div>
+            <img src="~/Areas/Customer/ContentWeb/images/fc-logo.png" />
+            <h1 style="text-align:center; background-color:aqua">CUSTOMER REGISTRATION FORM</h1>
+        </div>
+        <div>
+            <table align="center" cellpadding="10">
+                <tr>
+                    <td>FIRST NAME</td>
+                    <td>
+                        <input type="text" name="First_Name" maxlength="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>LAST NAME</td>
+                    <td>
+                        <input type="text" name="Last_Name" maxlength="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>EMAIL ID</td>
+                    <td><input type="text" name="Email_Id" maxlength="100" /></td>
+                </tr>
+
+                <tr>
+                    <td>PASSWORD</td>
+                    <td>
+                        <input type="password" name="First_Name" maxlength="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>RE-ENTER PASSWORD</td>
+                    <td>
+                        <input type="password" name="First_Name" maxlength="30" />
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>MOBILE NUMBER</td>
+                    <td>
+                        <input type="text" name="Mobile_Number" maxlength="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>ADDRESS<br /><br /><br /></td>
+                    <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+
+                    <td>
+                        <select name="state" id="stateid">
+                            <option value="-1">select state</option>
+                            <option value="1">Goa</option>
+                            <option value="2">Maharashtra</option>
+                            <option value="3">Delhi</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+
+                    <td>
+                        <select name="city" id="cityid">
+                            <option value="-1">select city</option>
+                            <option value="1">Mumbai</option>
+                            <option value="2">Pune</option>
+                            <option value="3">Surat</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Profile Image</td>
+                    <td><input type="file" name="pic" accept="image/*"></td>
+                </tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+
+            </table>
+        </div>
+    </div>
+</body>
+</html>

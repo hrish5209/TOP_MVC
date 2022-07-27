@@ -1,0 +1,67 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Areas/Customer/LoginDesign/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <div class="wrap">
+        <!-- strat-contact-form -->
+        <div class="contact-form">
+            <!-- start-form -->
+            @*<form class="contact_form" action="#" method="post" name="contact_form">*@
+            @using (Html.BeginForm())
+            {
+                <h1>Login Into Your Account</h1>
+                <br>
+                <ul>
+                    <li>
+                        <input type="email" class="txt_bx_1" name="email" placeholder="UserId" required />
+                        <span class="form_hint">Enter UserId</span>
+                        <p><img src="~/Areas/Customer/LoginDesign/images/contact.png" alt=""></p>
+                    </li>
+                    <li>
+                        <input type="password" class="txt_bx_2" name="pwd" placeholder="password">
+                        <p><img src="~/Areas/Customer/LoginDesign/images/lock.png" alt=""></p>
+                        <span class="text-danger">@ViewBag.loginerror</span>
+                    </li>
+                </ul>
+            }
+                <input type="submit" name="Login" value="Login" />
+                <input type="submit" name="Cancel" value="Cancel" />
+                <div class="clear"></div>
+                <div class="forgot">
+                    <a href="#">forgot password?</a>
+                </div>
+                <div class="clear"></div>
+            
+            @*</form>*@
+            <!-- end-form -->
+            <!-- start-account -->
+            <div class="account">
+                <h2><a href="/Customer/Customer/Register">Don' have an account? Sign Up!</a></h2>
+            </div>
+            <!-- end-account -->
+
+            <div class="clear">
+
+            </div>
+        </div>
+        <!-- end-contact-form -->
+        <div class="footer">
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
